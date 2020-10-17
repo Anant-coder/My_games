@@ -2,6 +2,7 @@
 #include <windows.h>
 
 // Author : Anant Mishra
+/* A TIC-TAC-TOE game :) which runs over console along with some colors added to it !!!*/
 // Any correction is welcome :)
 
 using namespace std;
@@ -58,11 +59,8 @@ void displaymatrix(char matrix[3][3])
 int placechar(char matrix[3][3], int chance)
 {
     int x, y;
-    bool error = 0;
     cout << endl;
-
     cout << "Player " << (chance == 1 ? "X" : "O") << " turn :-" << endl;
-
     cout << "Enter the X and Y coordinates : " << endl;
     cin >> x >> y;
 
