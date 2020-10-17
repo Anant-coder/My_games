@@ -2,9 +2,6 @@
 #include <windows.h>
 
 // Author : Anant Mishra
-/* 
-*** TIC-TAC-TOE *** game in which two players can play one after another by entering the position as mentioned already in the matrix 
-*/
 // Any correction is welcome :)
 
 using namespace std;
@@ -30,11 +27,14 @@ int main()
     cout << endl;
     cout << "Let's play :)" << endl;
     cout << endl;
+
+    char matrix1[9] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+    displaymatrix(matrix1);
     changecolor(4);
     cout << "Player 1 : X" << endl;
     changecolor(2);
     cout << "Player 2 : O" << endl;
-    char matrix[9] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+    char matrix[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
 
     while (win == 0)
     {
@@ -121,10 +121,10 @@ int checkwin(char matrix[9], int chance)
     }
     
     // Check diagonals
-    if ((matrix[0] == 'X' || matrix[0] == 'O') && matrix[0] == matrix[5] && matrix[0] == matrix[9])
+    if ((matrix[0] == 'X' || matrix[0] == 'O') && matrix[0] == matrix[4] && matrix[0] == matrix[8])
         condition = 1;
 
-    if ((matrix[3] == 'X' || matrix[3] == 'O') && matrix[3] == matrix[5] && matrix[3] == matrix[8])
+    if ((matrix[2] == 'X' || matrix[2] == 'O') && matrix[2] == matrix[4] && matrix[2] == matrix[6])
         condition = 1;
 
     // Winning check
