@@ -2,6 +2,9 @@
 #include <windows.h>
 
 // Author : Anant Mishra
+/* 
+*** TIC-TAC-TOE *** game in which two players can play one after another by entering the X/Y postions of the matrix 
+*/
 // Any correction is welcome :)
 
 using namespace std;
